@@ -5,6 +5,7 @@
     "main": "index.js",
     "scripts": {
         "build": "rollup -c",
+        "build:dev": "watch-run -p ./static/js/app/**/*.js 'rollup -c'",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "author": "",
@@ -15,6 +16,7 @@
         "babel-preset-stage-0": "^6.5.0",
         "nodemon": "^1.10.0",
         "rollup": "^0.34.1",
-        "rollup-plugin-babel": "^2.6.1"
+        "rollup-plugin-babel": "^2.6.1",
+        "watch-run": "^1.2.4"
     }
 }

@@ -4,7 +4,12 @@
  */
 //jshint esnext: true
 
-var {Model, View, Collection} = Backbone,
-    AppView = View.extend();
+var {Model, View, Collection} = Backbone;
+
+class AppView extends Model {
+    render () {
+        console.log('render');
+    }
+}
 
 export default new AppView();

@@ -4,6 +4,6 @@
  */
 //jshint esnext: true
 
-import AppView  from './view/appView.js';
+import appView  from './view/appView.js';
 
-console.log('main', AppView, Backbone);
+console.log('main', appView.render());

@@ -11,7 +11,7 @@ default {
     entry: './static/js/app/main.js',
     plugins: [babel()],
     targets: [{
-        dest: './static/js/app/dist/bundle.js',
+        dest: './static/js/dist/bundle.js',
         format: 'cjs'
     }]
 };
