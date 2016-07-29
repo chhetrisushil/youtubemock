@@ -1,0 +1,6 @@
+set tabstop=4       " tab is 4 spaces
+set shiftwidth=4    " number of spaces to use for autoindenting
+set expandtab       " use appropriate number of spaces when tabbing
+let g:email="chhetrisushil@gmail.com"
+let g:username="Sushil Chhetri"
+let g:java_classpath="/usr/lib/jvm/java-8-openjdk-amd64/lib"

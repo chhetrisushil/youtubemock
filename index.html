@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Youtube Mock</title>
+</head>
+
+<body>
+    <section id="app">
+
+    </section>
+
+    <!-- templates: START -->
+    <script type="text/x-template" id="template-searchInput">
+        <nav>
+            <input type="text" id="searchInput" />
+            <input type="submit" id="search" />
+        </nav>
+    </script>
+
+    <script type="text/x-template" id="template-searchResults">
+        <aside id="searchResults">
+            <header>
+                <h2>Search Result</h2>
+            </header>
+            <ul id="searchList"></ul>
+        </aside>
+    </script>
+
+    <script type="text/x-template">
+        <section id="player"></section>
+    </script>
+
+    <script type="text/x-template" id="template-playlist">
+        <aside>
+            <section id="playlist">
+                <header>
+                    <h2>Playlist</h2>
+                </header>
+                <ul id="play-list"></ul>
+            </section>
+        </aside>
+    </script>
+
+    <script type="text/x-template" id="template-card">
+        <figure>
+            <img alt="" src="#" />
+        </figure>
+        <h3>Title</h3>
+        <p>description</p>
+        <a href="#" class="addBtn"></a>
+    </script>
+    <!-- templates: END -->
+
+    <!-- vendor scripts: START -->
+    <script src="static/js/vendor/lodash.js"></script>
+    <script src="static/js/vendor/jquery-3.1.0.js"></script>
+    <script src="static/js/vendor/backbone.js"></script>
+    <!-- vendor scripts: END -->
+
+    <script src="static/js/app/dist/bundle.js"></script>
+
+    <!-- googleapi -->
+    <!-- <script src="https://apis.google.com/js/api.js"></script> -->
+    <!-- googleapi -->
+</body>
+
+</html>
