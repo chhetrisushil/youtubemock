@@ -4,6 +4,6 @@
  */
 //jshint esnext: true
 
-import appView  from './view/appView.js';
-
-console.log('main', appView.render());
+import appView from './view/appView.js';
+appView.render();
+console.log('main');

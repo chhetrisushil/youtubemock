@@ -4,10 +4,12 @@
  */
 //jshint esnext: true
 
-var {Model, View, Collection} = Backbone;
+var {
+    Model, View, Collection
+} = Backbone;
 
 class AppView extends Model {
-    render () {
+    render() {
         console.log('render');
     }
 }
