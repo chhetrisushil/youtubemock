@@ -4,14 +4,24 @@
  */
 //jshint esnext: true
 
-var {
-    Model, View, Collection
-} = Backbone;
+import SearchView from './searchView.js';
 
-class AppView extends Model {
+let {View}= Backbone;
+
+class AppView extends View {
+    constructor() {
+        super();
+        this.setElement('#app');
+    }
+
     render() {
-        console.log('render');
+        var searchView = new SearchView();
+
+        //render search view
+        this.$el.append(searchView.$el);
+
+        return this;
     }
 }
 
-export default new AppView();
+export default AppView;

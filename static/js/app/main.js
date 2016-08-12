@@ -4,6 +4,11 @@
  */
 //jshint esnext: true
 
-import appView from './view/appView.js';
-appView.render();
-console.log('main');
+import AppView from './view/appView.js';
+
+$(() => {
+    let appView = new AppView();
+
+    //render app
+    appView.render();
+});
