@@ -29,18 +29,18 @@ class SearchView extends View {
         return this;
     }
 
-    onKeyPress(e) {
-        if (e.which === 13) {
-            this.doSearch((this.$('#searchInput').val() || '').trim());
+    onKeyPress({which, target}) {
+        if (which === 13) {
+            this.doSearch($(target).val());
         }
     }
 
     onClick(e) {
-        this.doSearch((this.$('#searchInput').val() || '').trim());
+        this.doSearch(this.$('#searchInput').val());
     }
 
-    doSearch(val) {
-        console.log(val);
+    doSearch(val='') {
+        console.log(val.trim());
     }
 }
 
