@@ -18,6 +18,6 @@ default {
     plugins: plugins,
     targets: [{
         dest: './static/js/dist/bundle.js',
-        format: 'cjs'
+        format: 'iife'
     }]
 };
