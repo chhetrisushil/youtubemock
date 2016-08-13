@@ -6,7 +6,7 @@
     "scripts": {
         "server": "nodemon server.js",
         "build": "rollup -c",
-        "build:dev": "NODE_ENV=dev watch-run -ip ./static/js/app/**/*.js,./static/js/app/*.js 'rollup -cm'",
+        "build:dev": "NODE_ENV=dev watch-run -ip ./static/js/app/**/*.js,./static/js/app/*.js,./static/js/lib/*.js 'rollup -cm'",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "author": "",

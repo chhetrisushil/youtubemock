@@ -3,12 +3,10 @@
  * Copyright (C) 2016 Sushil Chhetri <chhetrisushil@gmail.com>
  */
 //jshint esnext: true
-
 import AppView from './view/appView.js';
 
 $(() => {
     let appView = new AppView();
 
-    //render app
-    appView.render();
+    console.log(appView);
 });

@@ -3,12 +3,14 @@
  * Copyright (C) 2016 Sushil Chhetri <chhetrisushil@gmail.com>
  */
 //jshint esnext: true
+import SearchCollection from '../collection/searchCollection.js';
 
 let { View } = Backbone;
 
 class SearchView extends View {
     /*jshint ignore: start*/
     template = _.template($('#template-searchInput').html());
+    collection = new SearchCollection([{test: 'd'}]);
     /*jshint ignore: end*/
 
     events() {
@@ -18,9 +20,11 @@ class SearchView extends View {
         };
     }
 
-    constructor() {
-        super();
+    constructor(options) {
+        super(options);
         this.render();
+
+        // View.apply(this, arguments);
     }
 
     render() {
