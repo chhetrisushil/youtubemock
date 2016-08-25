@@ -18,7 +18,7 @@ class View {
     }
 
     get el() {
-        return document.createElement(this.__tagName__);
+        return document.createElement(this.tagName);
     }
 
     constructor() {
