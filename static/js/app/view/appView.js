@@ -5,9 +5,23 @@
 //jshint esnext: true
 import View from '../../lib/view.js';
 
-class AppView extends View {
+let Mixin = Test => class extends Test {
+    testing() {
+        console.log('testing');
+    }
+};
+
+class AppView extends Mixin(View) {
+    //jshint ignore: start
+    tagName = 'span';
+    //jshint ignore: end
+
     constructor(options) {
         super(options);
+    }
+
+    static test() {
+        console.log('test');
     }
 }
 

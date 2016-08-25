@@ -9,4 +9,7 @@ $(() => {
     let appView = new AppView();
 
     console.log(appView);
+    console.log(appView.testing);
+    console.log(appView.el);
+    console.log(AppView.test);
 });

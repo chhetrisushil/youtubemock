@@ -5,8 +5,19 @@
 //jshint esnext: true
 
 class View {
+    get tagName() {
+        return this.__tagName__;
+    }
+
+    set tagName(val) {
+        this.__tagName__ = val;
+    }
+
+    get el() {
+        return document.createElement(this.__tagName__ || 'div');
+    }
+
     constructor() {
-        console.log('View base class');
     }
 }
 
