@@ -5,6 +5,10 @@
 //jshint esnext: true
 
 class View {
+    //jshint ignore: start
+    __tagName__ = 'div';
+    //jshint ignore: end
+
     get tagName() {
         return this.__tagName__;
     }
@@ -14,7 +18,7 @@ class View {
     }
 
     get el() {
-        return document.createElement(this.__tagName__ || 'div');
+        return document.createElement(this.__tagName__);
     }
 
     constructor() {

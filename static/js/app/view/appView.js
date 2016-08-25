@@ -18,6 +18,7 @@ class AppView extends Mixin(View) {
 
     constructor(options) {
         super(options);
+        console.log(this.el);
     }
 
     static test() {
